@@ -8,7 +8,7 @@ namespace Company.Function
     public static class TimerTriggerCSharpTest2
     {
         [FunctionName("TimerTriggerCSharpTest2")]
-        public static void Run([TimerTrigger("*/30 * * * * *")]TimerInfo myTimer, ILogger log)
+        public static void Run([TimerTrigger("0 */5 * * * *")]TimerInfo myTimer, ILogger log)
         {
             log.LogInformation($"Alvaro Ruano executed this at: {DateTime.Now}");
         }
