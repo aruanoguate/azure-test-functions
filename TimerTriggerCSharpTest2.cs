@@ -3,14 +3,14 @@ using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Host;
 using Microsoft.Extensions.Logging;
 
-namespace OpportunoTech.Serverless
+namespace Company.Function
 {
-    public static class TimerTriggerCSharpTest
+    public static class TimerTriggerCSharpTest2
     {
-        [FunctionName("TimerTriggerCSharpTest")]
+        [FunctionName("TimerTriggerCSharpTest2")]
         public static void Run([TimerTrigger("*/30 * * * * *")]TimerInfo myTimer, ILogger log)
         {
-            log.LogInformation($"C# Timer trigger function executed at: {DateTime.Now}");
+            log.LogInformation($"Alvaro Ruano executed this at: {DateTime.Now}");
         }
     }
 }
